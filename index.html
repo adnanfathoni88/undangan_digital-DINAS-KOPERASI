@@ -18,6 +18,8 @@
     <!-- countdown -->
     <link rel="stylesheet" href="countdown/css/simplyCountdown.theme.default.css" />
     <script src="countdown/dist/simplyCountdown.min.js"></script>
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,7 +37,8 @@
             </div>
         </div>
         <div class="hero-overlay position-absolute bg-dark w-100"> </div>
-        <div class="position-relative container d-flex justify-content-center align-items-center text-center h-100 "
+        <div data-aos="zoom-in"
+            class="position-relative container d-flex justify-content-center align-items-center text-center h-100 "
             style="z-index: 2;">
             <div>
                 <h4 class="selamat-datang">Selamat Datang Di</h4>
@@ -49,17 +52,31 @@
         </div>
     </section>
 
+    <!-- toast -->
+    <!-- <div class="toast position-absolute top-0 end-0 mx-4 mt-4" role="alert" aria-live="assertive" aria-atomic="true"
+        style="z-index: 99;">
+        <div class="toast-header">
+            <strong class="me-auto text-success">Informasi</strong>
+            <small>sekarang</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Terimakasih telah mengisi form kehadiran, kami akan segera menghubungi Anda.
+        </div>
+    </div> -->
+
+
     <!-- detail -->
     <section id="detail">
         <div class="container d-flex flex-column justify-content-center align-items-center text-center h-100 ">
             <div class="detail-body w-75">
-                <div>
+                <div data-aos="zoom-in">
                     <h1>Infromasi</h1>
                     <p>
                         Berikut adalah informasi acara yang akan kami selenggarakan.
                     </p>
                 </div>
-                <div class="card mt-4 mb-2">
+                <div data-aos="fade-up" class="card mt-4 mb-2">
                     <ul class="list-group list-group-flush">
                         <div class="card-header"> Jadwal </div>
                         <li class="list-group-item"><i class="fa-solid fa-calendar-days px-2"></i>Selasa, 16 Juli 2024
@@ -68,13 +85,13 @@
                         <li class="list-group-item"><i class="fa-solid fa-shirt px-2"></i>Bebas Sopan</li>
                     </ul>
                 </div>
-                <div class="card mt-2">
+                <div data-aos="fade-up" class="card mt-2">
                     <ul class="list-group list-group-flush">
                         <div class="card-header"> Note</div>
                         <li class="list-group-item">Membawa produk
                             yang akan difoto</li>
                         <li class="list-group-item">
-                            maksimal jenis produk yang dibawa: <br>
+                            Maksimal jenis produk yang dibawa: <br>
                             Craft 5 produk, <br>
                             Fashion 5 produk, <br> Makanan siap saji 2 produk </li>
                         <li class="list-group-item">
@@ -83,7 +100,7 @@
                     </ul>
                 </div>
 
-                <div class="mt-4 acara-dimulai d-flex flex-column align-items-center">
+                <div data-aos="fade-up" class="mt-4 acara-dimulai d-flex flex-column align-items-center">
                     <p>Acara akan dimulai dalam:</p>
                     <div class="simply-countdown"></div>
                 </div>
@@ -94,82 +111,82 @@
     <!-- rundown -->
     <section id="rundown">
         <div class="container d-flex flex-column justify-content-center align-items-center text-center h-100 ">
-            <div class="mb-4">
+            <div data-aos="zoom-in" class="mb-4">
                 <h1>Rundown Acara</h1>
             </div>
             <div class="rundown-body position-relative" style="width: 75%;">
                 <div class="rundown-outline position-absolute h-100"></div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>09.00 - 10.00</h6>
                         <span> Registration lorem </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>10.00 - 10.30</h6>
                         <span> Opening </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>10.30 - 11.30</h6>
                         <span> Kurasi Foto Produk UMKM </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
                         <span> Closing </span>
                     </div>
                 </div>
-                <div class="card p-4 w-100 mb-2 position-relative">
+                <div data-aos="fade-right" class="card p-4 w-100 mb-2 position-relative">
                     <div class="rundown-circle"></div>
                     <div class="text-start">
                         <h6>11.30 - 12.00</h6>
@@ -181,17 +198,54 @@
     </section>
 
     <!-- lokasi -->
-    <section id="location">
+    <!-- <section id="location">
         <div class="container d-flex flex-column justify-content-center align-items-center text-center h-100">
-            <div>
+            <div data-aos="zoom-in">
                 <h1>Lokasi Acara</h1>
                 <p>Dinas Koperasi dan Usaha Kecil Menengah Daerah Istimewa Yogyakarta</p>
             </div>
-            <div class="mt-2 w-100">
+            <div data-aos="zoom-in-down" data-aos-duration="1500" class="mt-2 w-100">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126489.48593734535!2d110.28799446796828!3d-7.811361321307131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a590acdd7c745%3A0x59c8edc5d1c90b6!2sDinas%20Koperasi%20dan%20Usaha%20Kecil%20Menengah%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1721146360855!5m2!1sid!2sid"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- gallery -->
+    <section id="gallery">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center h-100">
+            <div data-aos="zoom-in" class="mb-4">
+                <h1>Gallery</h1>
+            </div>
+            <div class="row">
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/1.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/2.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/3.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/4.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/5.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/6.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/7.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-aos="zoom-in-down" data-aos-duration="1500" class="col-lg-3 col-md-6">
+                    <img src="./img/product/8.jpg" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -199,35 +253,36 @@
     <!-- RSVP -->
     <section id="rsvp">
         <div class="container d-flex flex-column justify-content-center align-items-center text-center h-100">
-            <div>
+            <div data-aos="zoom-in-down">
                 <h1>Form Kehadiran</h1>
                 <p>Harap konfirmasi kehadiran Anda dengan mengisi form di bawah ini.</p>
             </div>
             <div class="mt-2 w-100 text-center d-flex justify-content-center">
-                <form class="rsvp-form" action="" method="post" style="width: 70%;">
+                <form id="my-form" class="rsvp-form" method="post" style="width: 70%;"
+                    action="https://script.google.com/macros/s/AKfycbw_i2Ye3F0ZOQLBYUplg7PCXDH2198SOhok8n1COu2hiDMPPyfpp_jxe1Pmd8o_Uxa2/exec">
                     <div class="mb-3">
                         <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" name="wa" placeholder="Nomor WA" required>
+                        <input type="text" class="form-control" name="nomor" placeholder="Nomor WA" required>
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email (opsional)">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" name="nama_usaha" placeholder="Nama Usaha" required>
+                        <input type="text" class="form-control" name="usaha" placeholder="Nama Usaha" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" name="jumlah_jenis_produk"
+                        <input type="text" inputmode="numeric" class="form-control" name="jumlah"
                             placeholder="Jumlah jenis produk" required>
                     </div>
                     <div class="mb-4">
-                        <select class="form-select" aria-label="Default select example" required>
+                        <select class="form-select" name="kategori" aria-label="Default select example" required>
                             <option selected>-- Pilih Kategori --</option>
-                            <option value="1">Craft</option>
-                            <option value="2">Fashion</option>
-                            <option value="3">Makanan Siap Saji</option>
-                            <option value="4">Lainnya</option>
+                            <option value="Craft">Craft</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Makanan Siap Saji">Makanan Siap Saji</option>
+                            <option value="Lainnya">Lainnya</option>
                         </select>
                     </div>
                     <div>
@@ -242,7 +297,7 @@
     <section id="wa">
         <div class="container">
             <div class="d-flex justify-content-center align-items-center text-center h-100">
-                <div>
+                <div data-aos="zoom-in-down">
                     <h1>Butuh Bantuan?</h1>
                     <p>Jika Anda memiliki pertanyaan atau butuh bantuan, silahkan hubungi kami melalui WhatsApp.</p>
                     <a href="https://wa.me/6281234567890" class="btn btn-lg mt-2">Admin - 0856 xxxx xxxx</a>
@@ -252,8 +307,8 @@
     </section>
 
     <!-- copysright -->
-    <footer class="bg-dark text-center text-white py-2">
-        <p>&copy; 2024. Adnan Dev</p>
+    <footer class="bg-dark text-center text-white pt-2 px-2" style="height: 100px;">
+        <span>&copy; 2024. Adnan Dev</span>
     </footer>
 
     <!-- menu -->
@@ -281,6 +336,10 @@
                     </a>
                 </div>
                 <div class="mx-2 menu-icon">
+                    <a href="#gallery">
+                        <i class="fa-solid fa-image"></i> </a>
+                </div>
+                <div class="mx-2 menu-icon">
                     <a href="#rsvp">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
@@ -289,9 +348,23 @@
         </div>
     </section>
 
+
+    <!-- bootstrap -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+
+    <!-- AOS ANIMATE -->
+    <script src="node_modules/aos/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });
+        window.addEventListener('resize', function () {
+            AOS.refresh();
+        });
+    </script>
 
     <!-- countdown -->
     <script>
@@ -308,6 +381,32 @@
                 minutes: { singular: 'menit', plural: 'menit' },
                 seconds: { singular: 'detik', plural: 'detik' }
             },
+        });
+    </script>
+
+    <!-- form submit -->
+    <script>
+        window.addEventListener("load", function () {
+            const form = document.getElementById('my-form');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        const toast = new bootstrap.Toast(document.querySelector('.toast'));
+
+                        // scroll to hero
+                        const heroElement = document.getElementById('hero');
+                        heroElement.scrollIntoView({ behavior: 'smooth' });
+
+                        toast.show();
+                        form.reset();
+                    })
+            });
         });
     </script>
 
