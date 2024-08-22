@@ -1,25 +1,67 @@
 :root {
-  --dark: #2b2b28;
+  --dark: #000000;
   --gold: #e3b04b;
-  --light-gold: #f1d6ab;
-  --dark-green: #1da144;
-  --green: #62a645;
-  --light-green: #6dba4a;
-  --yellow: #e0c103;
+  --cream: #f1d6ab;
+  --white: #f8f8f8;
 }
 
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 body {
-  width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  background-color: var(--dark) !important;
+  display: flex;
+  justify-content: center;
+}
+.row {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
 .col-md-3 {
   padding: 0px !important;
 }
 
+.content {
+  width: 375px !important;
+}
+
 /* hero */
 #hero {
-  background-image: url("./img/x.jpg");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100% - 5%);
+  width: calc(100% - 5%);
+}
+
+.hero-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#hero h4 {
+  font-family: "Great Vibes", cursive !important;
+  font-size: 60px !important;
+  color: var(--gold);
+}
+
+#hero .hero-penerima {
+  background-color: var(--cream);
+}
+
+#hero {
+  background-color: var(--dark);
+  color: var(--gold);
   height: 100vh;
   max-height: 100vh;
   background-size: cover;
@@ -44,14 +86,8 @@ body {
   z-index: 1;
 }
 
-#hero h1 {
-  color: var(--green);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
 #hero a {
-  background-color: var(--yellow);
+  background-color: var(--gold);
 }
 
 #hero .selamat-datang {
@@ -60,80 +96,131 @@ body {
 
 /* detail */
 #detail {
-  min-height: 100vh;
-  padding: 50px 0px;
-}
-
-#detail h1 {
-  color: var(--dark-green);
-  font-weight: 700;
-}
-
-#detail .card {
-  width: 100%;
-}
-
-.acara-dimulai p,
-h1 {
-  margin: 0px !important;
-}
-
-/* rundown */
-#rundown {
-  min-height: 100vh;
-}
-#rundown .container {
-  padding: 50px 0px;
-  width: 70%;
-}
-
-#rundown h6 {
-  margin: 0px;
-  padding-right: 10px;
-}
-
-#rundown h1 {
-  color: var(--dark-green);
-  font-weight: 700;
-}
-
-#rundown .card {
+  min-height: 120vh;
   background-color: var(--dark);
-  color: var(--yellow);
+  color: var(--white);
+}
+.detail-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100% - 5%);
+  width: calc(100% - 5%);
 }
 
-#rundown .card span {
-  color: #fff !important;
-  padding-top: 10px;
-}
-
-#rundown .rundown-outline {
-  border-left: 2px solid var(--dark-green);
-  left: -20px;
-}
-
-#rundown .rundown-circle {
-  position: absolute;
-  top: 40px;
-  left: -25px;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background-color: var(--green);
-}
-
-/* location */
-#location {
-  padding: 100px 0px;
-}
-
-#location h1 {
-  color: var(--green);
-  font-weight: 700;
-}
-
-#location iframe {
+.detail-child img {
+  height: 100%;
   width: 100%;
+  object-fit: fill;
+}
+
+#detail h4 {
+  font-family: "Great Vibes", cursive !important;
+  font-size: 50px !important;
+  color: var(--gold);
+}
+
+#detail p {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.detail-sambutan p {
+  font-size: 20px !important;
+}
+
+.detail-sambutan span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* mempelai */
+#mempelai {
+  min-height: 120vh;
+  background-color: var(--dark);
+  color: var(--white);
+}
+.mempelai-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100% - 5%);
+  width: calc(100% - 5%);
+}
+
+.mempelai-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#mempelai h4 {
+  font-family: "Great Vibes", cursive !important;
+  font-size: 60px !important;
+  color: var(--gold);
+}
+
+#mempelai .mempelai-item p {
+  opacity: 0.8;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.foto-mempelai {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* acara */
+.acara-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100vh - 5%);
+  width: calc(100vw - 5%);
+}
+
+.acara-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#acara {
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+#acara span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+#acara h4 {
+  font-size: 30px;
+}
+
+/* lokasi */
+.lokasi-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100vh - 5%);
+  width: calc(100vw - 5%);
+}
+
+.lokasi-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#lokasi {
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+#lokasi iframe {
+  width: 80%;
   height: 300px;
 }
 
@@ -155,18 +242,89 @@ h1 {
 
 /* rsvp */
 #rsvp {
-  padding: 50px 0px;
+  min-height: 100vh;
+  /* height: 100%; */
   background-color: var(--dark);
-  color: white;
+  color: var(--white);
+}
+.rsvp-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100% - 5%);
+  width: calc(100% - 5%);
 }
 
-#rsvp h1 {
-  color: var(--green);
-  font-weight: 700;
+.rsvp-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
-#rsvp form button {
-  background-color: var(--yellow);
+#disqus_thread iframe {
+  width: 100px !important;
+}
+
+/* ucapan */
+#ucapan {
+  background-color: var(--dark);
+  color: var(--white);
+  position: relative;
+}
+
+.border-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* Pastikan gambar border berada di belakang konten */
+  pointer-events: none; /* Menghindari interaksi dengan gambar border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+.border-wrapper .b-top {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.border-wrapper .b-bottom {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: relative;
+  bottom: 20px;
+}
+
+/* penutup */
+#penutup {
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--white);
+}
+.penutup-child {
+  max-height: 100%;
+  max-width: 100%;
+  height: calc(100% - 5%);
+  width: calc(100% - 5%);
+}
+
+.penutup-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+#penutup .penutup-body h2 {
+  font-family: "Great Vibes", cursive !important;
+  font-size: 40px !important;
+  color: var(--gold);
+  margin-top: 20px !important;
 }
 
 /* wa */
@@ -188,6 +346,8 @@ h1 {
 /* menu */
 #menu {
   position: fixed;
+  z-index: 99999;
+  display: none;
   bottom: 0px;
   width: 100%;
 }
@@ -205,46 +365,60 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: fit-content;
-  margin-bottom: 10px;
-  background-color: var(--yellow);
+  margin-bottom: 12px;
+  background-color: var(--gold);
   border-radius: 10px;
 }
 
-/* responsive */
-@media (max-width: 768px) {
-  #hero .logo-group {
-    width: fit-content !important;
-    padding: 0px 10px;
-  }
+.text-gold {
+  color: var(--gold);
+}
 
-  #hero .logo {
-    height: 20px;
-  }
+.text-dark {
+  color: var(--dark);
+}
 
-  #hero h4 {
-    font-size: 20px !important;
-  }
+.text-white {
+  color: var(--white);
+}
 
-  #hero p {
-    font-size: 12px !important;
-  }
+.text-cream {
+  color: var(--cream);
+}
 
-  /* detail */
-  #detail .detail-body {
-    width: 90% !important;
-  }
+.text-great-vibes {
+  font-family: "Great Vibes", cursive !important;
+}
 
-  /* rundown */
-  #rundown .container {
-    width: 90%;
-  }
+.bg-gold {
+  background-color: var(--gold) !important;
+}
 
-  #rundown .rundown-body {
-    width: 80% !important;
-  }
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-white {
+  background-color: var(--white) !important;
+}
+.bg-cream {
+  background-color: var(--cream) !important;
+}
 
-  /* RSVP */
-  #rsvp .rsvp-form {
-    width: 80% !important;
+#music-play i,
+#music-pause i {
+  font-size: 30px;
+  bottom: 40px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 3s linear infinite;
 }
